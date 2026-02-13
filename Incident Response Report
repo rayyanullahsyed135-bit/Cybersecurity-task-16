@@ -1,0 +1,35 @@
+Executive Summary
+
+A simulated brute-force SSH attack was conducted against an Ubuntu system. Log analysis identified repeated failed login attempts from a single IP address. The incident was classified as a credential brute-force attempt.
+
+Immediate containment and remediation actions were taken to secure the system.
+
+Root Cause Analysis
+
+The server allowed password-based authentication, enabling repeated login attempts.
+
+Impact Assessment
+
+No successful unauthorized access
+
+Increased risk exposure
+
+Potential credential compromise risk
+
+Remediation Implemented
+
+Enabled SSH key authentication
+
+Disabled password authentication
+
+Configured firewall rules
+
+Preventive Recommendations
+
+Implement Fail2Ban
+
+Enable account lockout policy
+
+Use intrusion detection systems
+
+Conduct regular log monitoring
